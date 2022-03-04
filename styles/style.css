@@ -6,3 +6,160 @@ Green: #00B172
 White: #FFF
 
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.nav-bar{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.nav-bar-logo{
+    height: 30px;
+    margin: 5px 0px  5px 2%;
+}
+
+.nav-bar-ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px 0 10px;
+}
+
+/*Fully working links :D */
+
+.landing {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-height: 500px;
+    background-image: url("../images/landing.jpg");
+    background-position: 0,0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 40px;
+    color: white;   
+}
+
+h1{
+    font-size: xxx-large;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+
+.landing p {
+    font-size: large;
+    font-weight: 400;
+}
+
+.whats-on-spotify{
+    padding: 75px 0 75px 0;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container h3{
+    padding-bottom: 10px;
+    color: rgb(96, 148, 85);
+}
+
+.container-of-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 29%;
+}
+
+.container img {
+    height: 30%;
+    width: 30%;
+}
+
+.the-green-section{
+    color: white;
+    background-color: rgb(96, 148, 85);
+    width: 100%;
+    padding: 50px 0 50px 0;
+}
+
+.the-green-section h2{
+    text-decoration: underline;
+    text-align: left;
+    font-size: xx-large;
+}
+
+.the-green-section-container-of-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.the-green-section-text-container {
+    width: 33%;
+    align-self: center;
+    text-indent: 15px;
+    }
+
+ /* Couldn't have the text right against the left side
+of the page. Adding a margin or padding would have
+the images in the following containers to not be centered
+with the rest of the page. Adding the multiple paragraphs,
+allowed me to use the text-indent property that doesn't
+change the container's dimentions */
+
+.the-green-section-text-container h3{
+    padding: 15px 0 15px 0;
+}
+
+.spotify-icon-white-image{
+    width: 25%;
+    height: auto;
+}
+
+/* Hoping to learn more about positioning relative/absolute
+/static/sticky/fixed in the next classes. After hours of
+online research and review of pre-work content, I couldn't
+figure out how to use the position property properly. 
+Hence the need to format this section with FlexBox as well
+*/
+
+.spotify-app-image {
+    width: 60%;
+    height: auto;
+}
+
+.the-green-section-images-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}

@@ -23,6 +23,7 @@ body {
     position: fixed;
     background-color: white;
     width: 100%;
+    height: 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,13 +31,14 @@ body {
 }
 
 .nav-bar-logo{
-    height: 30px;
+    height: 50px;
     margin: 5px 0px  5px 2%;
 }
 
 .nav-bar-ul {
     list-style: none;
     display: flex;
+    font-size: large;
 }
 
 .nav-bar li a {
@@ -68,7 +70,7 @@ h1{
 }
 
 .landing p {
-    font-size: large;
+    font-size: x-large;
     font-weight: 400;
 }
 
@@ -83,8 +85,13 @@ h2 {
 }
 
 .container h3{
+    font-size: x-large;
     padding-bottom: 10px;
     color: rgb(96, 148, 85);
+}
+
+.container p {
+    font-size: large;
 }
 
 .container-of-containers{
@@ -109,57 +116,61 @@ h2 {
     background-color: rgb(96, 148, 85);
     width: 100%;
     padding: 50px 0 50px 0;
+    position: relative;
+    min-height: 500px;
+}
+
+.spotify-icon-white-image{
+    position: absolute;
+    height: 150px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .the-green-section h2{
     text-decoration: underline;
     text-align: left;
-    font-size: xx-large;
+    font-size: xxx-large;
+    width: 100%;
 }
 
-.the-green-section-container-of-containers{
+.flex-box{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.the-green-section-text-container {
-    width: 33%;
-    align-self: center;
-    text-indent: 15px;
-    }
-
- /* Couldn't have the text right against the left side
-of the page. Adding a margin or padding would have
-the images in the following containers to not be centered
-with the rest of the page. Adding the multiple paragraphs,
-allowed me to use the text-indent property that doesn't
-change the container's dimentions */
-
-.the-green-section-text-container h3{
-    padding: 15px 0 15px 0;
+.left-half{
+    width: 45%;
+    margin: 0 0 0 10em;
 }
 
-.spotify-icon-white-image{
-    width: 25%;
-    height: auto;
+.text-box {
+    width: 50%;
+    font-size: x-large;
 }
 
-/* Hoping to learn more about positioning relative/absolute
-/static/sticky/fixed in the next classes. After hours of
-online research and review of pre-work content, I couldn't
-figure out how to use the position property properly. 
-Hence the need to format this section with FlexBox as well
-*/
-
-.spotify-app-image {
-    width: 60%;
-    height: auto;
+.text-box h3{
+    padding: 0 0 1em 0;
 }
 
-.the-green-section-images-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 33%;
+.text-box p{
+    padding: 0 0 1em 0;
+}
+
+.right-half{
+    position: relative;
+    width: 45%;
+    margin: 0;
+}
+
+.spotify-app-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
 }
